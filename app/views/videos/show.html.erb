@@ -4,10 +4,11 @@
     <div class="container">
       <div class="span12 well">
         <div class="well">
-        <a href="<%= video_url(id: @video[:id]) %>"><h2><%= @video[:name] %></h2></a>
-        <p>by <%= link_to 'Best Vines', 'https://www.facebook.com/BestOfVines' %> @ <%= localtime_tag(@video[:ts]) %></p>
+        <h1 align="center" style="font-size: 20px;">Watch the Best Vine Videos Online</h1>
++        <p>Scroll through the best vine videos the internet has to offer. Use the left and right arrow keys to move from video to video.</p>
         </div>
-        
+         <a href="<%= video_url(id: @video[:id]) %>"><h2><%= @video[:name] %></h2></a>
+        <p>by <%= link_to 'Best Vines', 'https://www.facebook.com/BestOfVines' %> @ <%= localtime_tag(@video[:ts]) %></p>
         <div align="center">
           <video width="800" height="480" controls="controls" preload="none">
             <source type="video/mp4" src="<%= @video[:source] %>" />
